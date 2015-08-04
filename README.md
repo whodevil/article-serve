@@ -10,7 +10,7 @@ This is a simple micro service that provides an api for text articles.
 ### API
 * ```GET article/:id``` - retrieve a specific image.
 * ```POST article/:title``` -  create a new text article
-    * json ```json{ "content" : "", "tag" : []}``` 
+    * json ```{ "content" : "", "tag" : []}``` 
 * ```GET tag/:tag-name``` - retrieve a list of articles that match the tag.
 
 ### Configuration
