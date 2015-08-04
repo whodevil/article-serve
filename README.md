@@ -8,18 +8,15 @@ This is a simple micro service that provides an api for text articles.
 ## Spec
 
 ### API
-+ ```GET article/:id``` - retrieve a specific image.
-+ ```POST article/:title``` -  create a new text article
-    + json ```json
-{ "content" : "",
-  "tag" : []}
-``` 
-+ ```GET tag/:tag-name``` - retrieve a list of articles that match the tag.
+* ```GET article/:id``` - retrieve a specific image.
+* ```POST article/:title``` -  create a new text article
+    * json ```json{ "content" : "", "tag" : []}``` 
+* ```GET tag/:tag-name``` - retrieve a list of articles that match the tag.
 
 ### Configuration
 This app expects as an argument the location of the flat file DB. The database directory is formatted as such:
-+ ```<database-dir>/db.edn```
-+ ```<database-dir>/articles/```
+* ```<database-dir>/db.edn```
+* ```<database-dir>/articles/```
 
 #### Example db.edn
 ```clojure
